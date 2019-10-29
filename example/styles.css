@@ -1,0 +1,33 @@
+#myTitle {
+    color: green;
+}
+html{
+    color:red;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh;
+    overflow:hidden;
+    background-color: #eeeeee
+}
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom:6px;
+    box-shadow: 10px 10px 20px #999999;
+    text-align: center;
+}
+
+#button {
+    background-color: blue;
+    color: white;
+    padding: .6rem 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    border-radius: .3rem;
+}
