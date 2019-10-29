@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+</script>
+</header>
+<body>
+    <img height='400px' id='dog_img' src=''>
+    <br/>
+    <button id='button'>Link</button>
+    <script>
+        setImage = () => {
+            fetch("https://dog.ceo/api/breeds/image/random",)
+            .then(response => response.json())
+            .then(data => $('#dog_img').attr("src",data.message))
+        }
+        // foo2()
+        $("#button").click(() => {setImage()})
+    </script>
+</body>
+</html>
